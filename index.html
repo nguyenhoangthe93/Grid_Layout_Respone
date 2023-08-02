@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <style>
+      .header {
+        background: red;
+      }
+      .menu {
+        background: blue;
+      }
+
+      .main-content {
+        background: yellow;
+      }
+
+      .right {
+        background: green;
+      }
+
+      .footer {
+        background: orange;
+      }
+
+      .main {
+        background: white;
+        height: 400px;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-gap: 10px;
+      }
+      .content-wrap {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+      }
+      .content {
+        display: grid;
+        row-gap: 10px;
+      }
+
+      /* resonsive */
+      @media only screen and (max-width: 567px) {
+        .main {
+          grid-template-columns: auto;
+        }
+
+        .content-wrap {
+          grid-template-columns: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">Header</header>
+    <main class="main">
+      <nav class="menu">Menu</nav>
+      <div class="content">
+        <div class="content-wrap">
+          <div class="main-content">MAin</div>
+          <div class="right">Righ</div>
+        </div>
+        <footer class="footer">Footer</footer>
+      </div>
+    </main>
+  </body>
+</html>
